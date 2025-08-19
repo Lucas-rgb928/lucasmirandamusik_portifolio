@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+<section id="formularioOrcamento" style="padding: 60px 20px; background-color: #0c0c1f;">
+  <div style="max-width: 600px; margin: 0 auto; background-color: #111827; padding: 32px; border-radius: 12px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);">
+
+    <h2 style="text-align: center; font-size: 2rem; margin-bottom: 24px;">Solicite seu Orçamento</h2>
+
+    <form action="processar_orcamento.php" method="POST">
+      <input type="text" name="nome" placeholder="Seu nome completo" required
+             style="width: 100%; padding: 12px; margin-bottom: 16px; border: none; border-radius: 8px; background-color: #1f2937; color: white;">
+
+      <input type="email" name="email" placeholder="Seu e-mail" required
+             style="width: 100%; padding: 12px; margin-bottom: 16px; border: none; border-radius: 8px; background-color: #1f2937; color: white;">
+
+      <input type="tel" name="telefone" placeholder="WhatsApp ou telefone"
+             style="width: 100%; padding: 12px; margin-bottom: 16px; border: none; border-radius: 8px; background-color: #1f2937; color: white;">
+
+      <select name="tipo_evento" required
+              style="width: 100%; padding: 12px; margin-bottom: 16px; border: none; border-radius: 8px; background-color: #1f2937; color: white;">
+        <option value="">Selecione o tipo de evento</option>
+        <option value="Casamento">Casamento</option>
+        <option value="Corporativo">Corporativo</option>
+        <option value="Aniversário">Aniversário</option>
+        <option value="Outro">Outro</option>
+      </select>
+
+      <input type="date" name="data_evento" required
+             style="width: 100%; padding: 12px; margin-bottom: 16px; border: none; border-radius: 8px; background-color: #1f2937; color: white;">
+
+      <textarea name="mensagem" placeholder="Conte um pouco mais sobre o evento..." rows="5"
+                style="width: 100%; padding: 12px; margin-bottom: 16px; border: none; border-radius: 8px; background-color: #1f2937; color: white;"></textarea>
+
+      <button type="submit"
+              style="width: 100%; background-color: #3b82f6; color: white; padding: 12px; border: none; border-radius: 8px; font-weight: bold; font-size: 1rem; cursor: pointer;">
+        Enviar Orçamento
+      </button>
+    </form>
+  </div>
+</section>
